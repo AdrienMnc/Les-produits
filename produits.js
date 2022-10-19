@@ -64,8 +64,9 @@ Produits.prototype.remise = function(){
 
 //description produit
 Produits.prototype.desc = function () {
-    return `Le produit est vendu au prix de ${this.prixHT} HT soit ${this.prixTTC}.
-            Vous devez avoir ${this.ageRestriction}`
+    return `Le produit est vendu au prix de ${this.prixHT} HT soit ${produit2.calculPrixTTC()}.
+            Vous devez avoir ${this.ageRestriction} ans pour l'acheter.
+            Une remise de ${this.remise} euro est disponible.`
 }
 
 
